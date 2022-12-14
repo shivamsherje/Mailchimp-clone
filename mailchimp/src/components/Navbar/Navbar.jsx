@@ -1,9 +1,9 @@
 import React from 'react'
 import './Navbar.css'
 
-import Applogo from './Applogo3.png'
-import website from 'C:/Users/Hello/Desktop/cybe-domain-clone of mailchimp/delightful-animal-1301/mailchimp/src/assets/website.png'
-import search from "C:/Users/Hello/Desktop/cybe-domain-clone of mailchimp/delightful-animal-1301/mailchimp/src/assets/search.png"
+import Applogo from '../../assets/Applogo3.png'
+import website from '../../assets/website.png'
+import search from "../../assets/search.png"
 const Navbar = () => {
   return (
     <div className='navbar'>
