@@ -1,0 +1,15 @@
+.arrowr {
+  margin: auto;
+  background-color: #ffe01b;
+  border-radius: 20px;
+}
+.arrtxt {
+  padding: 2px;
+}
+.arrtxt:hover {
+  cursor: pointer;
+  background-color: #ffe01b;
+  border-radius: 20px;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-weight: bold;
+}
