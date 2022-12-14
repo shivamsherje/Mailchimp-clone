@@ -17,6 +17,7 @@
     "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
     "react-video-js-player": "^1.1.1",
+    "typescript": "^4.9.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
