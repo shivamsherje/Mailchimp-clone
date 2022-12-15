@@ -11,6 +11,7 @@ const TopSections = () => {
         mb={{ base: "18px", md: "30px", lg: "60px" }}
       >
         <Heading
+          fontWeight="medium"
           className="heading-of-homepage"
           margin="auto"
           w="60%"
@@ -20,14 +21,13 @@ const TopSections = () => {
           Turn Emails into Revenue
         </Heading>
 
-      
-
         <Text
           className="paragraph-of-top-section"
           margin="auto"
           fontWeight={400}
           mt={{ base: "16px", md: "18px", lg: "25px" }}
           w="62%"
+          
           textAlign="center"
           lineHeight={1.8}
         >

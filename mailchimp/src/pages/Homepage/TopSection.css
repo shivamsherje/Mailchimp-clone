@@ -1,20 +1,19 @@
 .btn-signup {
     transition: .2s ease-out;
-    
 }
-
 .btn-signup:hover {
     transform: translateY(-10px);
 }
-
-
 .heading-of-homepage{
     font-size: 48px;
 }
-
 .paragraph-of-top-section{
     font-size: 25px;
+    text-align: justify;
 }
+
+
+
 
 @media screen  and (min-width: 481px) and (max-width:  767px)  {
     
@@ -25,13 +24,11 @@
         font-size: 20px;
         text-align: justify;
     }
-
 }
 
 
 @media screen and (min-width: 320px)  and (max-width: 480px)  {
 
-    
 .heading-of-homepage{
     font-size: 25px;
 }
@@ -40,8 +37,6 @@
     text-align: justify;
 
 }
-
-
-
-
 }
+
+
