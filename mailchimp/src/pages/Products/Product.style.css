@@ -1,0 +1,8 @@
+.btn-strtB {
+  transition: 0.2s ease-out;
+}
+
+.btn-strtB:hover {
+  transform: translateY(-10px);
+  background-color: #ffe01b;
+}
