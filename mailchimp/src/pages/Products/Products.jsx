@@ -44,7 +44,7 @@ const Products = () => {
             </Text>
             <Center>
               <Box
-                w="190px"
+                w="250px"
                 h="50px"
                 borderRadius="50px"
                 bg="black"
