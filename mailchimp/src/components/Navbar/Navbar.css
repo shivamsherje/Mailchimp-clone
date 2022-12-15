@@ -5,42 +5,99 @@
 .navbar{
     display: flex;
     gap: 40px;
-    width: 99%;
+    width: 100%;
+    
     background-color: white;
-    justify-content: center;
-    margin-top: 30px;
-    border-color: black;
-    border-width: 2px;
+    justify-content: space-between;
+    z-index: 100;
+    border-width: 1px;
+    
+    position: fixed;
+    
+    
     align-items: center;
     padding: 10px;
 }
-.navbar img{
-    width: 100px;
+.navbar-div-3>img{
+    width: 200px;
+    display: flex;
+    justify-content: center;
 }
-.sales{
-    display: block;
-}
+
 .sales h3{
-    margin-left: 70px;
+    font-size: 12px;
+    margin-left: 80px;
+    font-weight: bold;
 }
-.navbar :nth-child(7){
-    width: 40px;
-    height: 40px;
+.sales span{
+    font-weight: bold;
+    width: 100%;
+    height: 50%;
+    font-size: small;
+    font-size: small;
+    
 }
-.navbar :nth-child(8){
-    width: 40px;
-    height: 40px;
+.navbar-div-1 h3:hover{
+text-decoration: underline;
+color: teal;
+cursor: pointer;
 }
 .navbar-div-2{
     display: flex;
     gap: 20px;
-    
+    width: auto;
+    padding-right: 2%;
+    align-items: center;
+
+}
+.navbar-div-1 h3{
+    font-weight: 500;
+}
+.navbar-div-2 :nth-child(2){
+    width: 30px;
+    height: 30px;
+}
+.navbar-div-2 :nth-child(3){
+    width: 20px;
+    height: 20px;
+}
+.navbar-div-1{
+    display: flex;
+    gap: 40px;
+    justify-content: left;
+    padding-left: 2%;
+}
+.navbar>img{
+    display: flex;
+    justify-content: center;
 }
 .navbar-div-2 button{
     border-color: rgb(44, 40, 40);
 }
-.navbar-div-1{
-    display: flex;
-    gap: 20px;
-    justify-content: left;
+.menu{
+    display: block;
+}
+.navbar div:nth-child(1){
+    display: none;
+}
+
+.navbar-div-2 div:nth-child(1){
+    display: block;
+}
+@media screen and  (max-width:767px){
+    .navbar-div-1{
+        display: none;
+    }
+    .navbar div:nth-child(1){
+        display: block;
+    }
+    .navbar-div-2 :nth-child(5){
+        display: none;
+    }
+    .navbar-div-2 div:nth-child(1){
+        display: none;
+    }
+    .navbar-div-2 img{
+        display: none;
+    }
 }
