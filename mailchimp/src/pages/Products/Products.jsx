@@ -1,7 +1,12 @@
 import { Button, Center, Container, Stack, Text, Box } from "@chakra-ui/react";
 import React from "react";
+import Head3 from "./Head3";
+import Image2 from "./Image2";
 import "./Product.style.css";
 import ProductImage from "./ProductImage";
+import { Unsplash } from "./Unsplash";
+import VideoPlayer from "../../assets/VideoPlayer";
+import WebLayout from "./WebLayout";
 
 const Products = () => {
   return (
@@ -71,6 +76,11 @@ const Products = () => {
         </Center>
       </Container>
       <ProductImage />
+      <Head3 />
+      <Image2 />
+      <WebLayout />
+      <VideoPlayer />
+      <Unsplash />
     </Box>
   );
 };
