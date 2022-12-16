@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import VideoP from "./videopl.mp4";
+import VideoP from "../../assets/videopl.mp4";
 import {
   Box,
   Stack,

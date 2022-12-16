@@ -5,7 +5,7 @@ import Image2 from "./Image2";
 import "./Product.style.css";
 import ProductImage from "./ProductImage";
 import { Unsplash } from "./Unsplash";
-import VideoPlayer from "../../assets/VideoPlayer";
+import VideoPlayer from "./VideoPlayer";
 import WebLayout from "./WebLayout";
 
 const Products = () => {
