@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Flex, Text, Divider, Image } from "@chakra-ui/react";
+import { Box, Flex, Text, Image } from "@chakra-ui/react";
 import { IoIosArrowForward } from "react-icons/io";
 
 function TopSection() {
