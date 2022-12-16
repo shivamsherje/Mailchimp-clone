@@ -1,36 +1,19 @@
-import React, { useEffect, useRef } from "react";
-import VideoP from "../../assets/videopl.mp4";
 import {
   Box,
   Stack,
   Container,
+  Image,
   Text,
   SimpleGrid,
   Button,
   Center,
 } from "@chakra-ui/react";
+import React from "react";
 import "./Product.style.css";
 
-const VideoPlayer = () => {
-  const videoEl = useRef(null);
-
-  const attemptPlay = () => {
-    videoEl &&
-      videoEl.current &&
-      videoEl.current.play().catch((error) => {
-        console.error("Error attempting to play", error);
-      });
-  };
-
-  useEffect(() => {
-    attemptPlay();
-  }, []);
-
+const Decide = () => {
   return (
-    <Box
-      backgroundColor="white"
-      w="100%"
-    >
+    <Box backgroundColor="white" w="100%">
       <Container as={Stack} maxW={"6xl"} pt={10} pb={16}>
         <SimpleGrid
           columns={{ base: 1, sm: 1, md: 2 }}
@@ -41,15 +24,12 @@ const VideoPlayer = () => {
             mb={{ sm: "0px" }}
             justify={{ sm: "center", base: "center" }}
           >
-            <video
-              className="videopla"
-              playsInline
-              loop
-              muted
-              controls
-              alt="All the devices"
-              src={VideoP}
-              ref={videoEl}
+            <Image
+              className="imgp"
+              src="https://eep.io/images/yzco4xsimv0y/2ewurCGaai01QOo0c24QAq/dc5c8ae42584033c0851f19894ee1251/ILLO_Hero_Transactional-Sending_Receiving-1520.png?w=1520&fm=webp&q=80"
+              alt="Logo55"
+              height={[150, 300, 600]}
+              w={[200, 400, 600]}
             />
           </Box>
 
@@ -66,7 +46,7 @@ const VideoPlayer = () => {
                 lineHeingt="1.33333333"
                 color="#241c15"
               >
-                Customize your new website layout
+                Decide if CyberDomain is right for you
               </Text>
             </Box>
             <Box pb={{ base: "0", sm: "20px", md: "50px" }}>
@@ -77,20 +57,18 @@ const VideoPlayer = () => {
                 color="#241c15"
                 fontWeight="400"
               >
-                CyberDomain's website builder has pre-built, professional
-                layouts for every section, so you can quickly change the
-                structure of your site as much as you like without any coding
-                knowledge.
+                Check out how our website builder tools stack up against the
+                competition.
               </Text>
             </Box>
             <Center>
               <Box
-                w="190px"
+                w="196px"
                 h="50px"
                 borderRadius="50px"
                 bg="black"
                 margin="auto"
-                mt="0px"
+                mt="30px"
               >
                 <Button
                   className="btn-strtB"
@@ -104,7 +82,7 @@ const VideoPlayer = () => {
                   pos="-moz-initial"
                   fontWeight="bold"
                 >
-                  Start refining
+                  See How We Rate
                 </Button>
               </Box>
             </Center>
@@ -115,4 +93,4 @@ const VideoPlayer = () => {
   );
 };
 
-export default VideoPlayer;
+export default Decide;

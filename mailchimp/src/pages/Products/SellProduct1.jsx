@@ -1,63 +1,42 @@
-import React, { useEffect, useRef } from "react";
-import VideoP from "../../assets/videopl.mp4";
 import {
   Box,
   Stack,
   Container,
+  Image,
   Text,
   SimpleGrid,
   Button,
   Center,
 } from "@chakra-ui/react";
+import React from "react";
 import "./Product.style.css";
 
-const VideoPlayer = () => {
-  const videoEl = useRef(null);
-
-  const attemptPlay = () => {
-    videoEl &&
-      videoEl.current &&
-      videoEl.current.play().catch((error) => {
-        console.error("Error attempting to play", error);
-      });
-  };
-
-  useEffect(() => {
-    attemptPlay();
-  }, []);
-
+export const SellProduct1 = () => {
   return (
-    <Box
-      backgroundColor="white"
-      w="100%"
-    >
+    <Box backgroundColor="white" w="100%">
       <Container as={Stack} maxW={"6xl"} pt={10} pb={16}>
         <SimpleGrid
           columns={{ base: 1, sm: 1, md: 2 }}
           spacing={{ md: "16", sm: "0", base: "0" }}
         >
-          <Box
-            m={{ sm: "auto", base: "auto" }}
-            mb={{ sm: "0px" }}
-            justify={{ sm: "center", base: "center" }}
-          >
-            <video
-              className="videopla"
-              playsInline
-              loop
-              muted
-              controls
-              alt="All the devices"
-              src={VideoP}
-              ref={videoEl}
-            />
-          </Box>
-
           <Stack
             direction="column"
             py={4}
-            mt={{ md: "20%", sm: "0", base: "0" }}
+            mt={{ md: "14%", sm: "0", base: "0" }}
           >
+            <Box>
+              <Button
+                colorScheme="pink"
+                _hover={{
+                  background: "#ff3ebf",
+                  color: "white",
+                }}
+                borderRadius="20"
+                style={{ cursor: "text" }}
+              >
+                New
+              </Button>
+            </Box>
             <Box>
               <Text
                 fontWeight="400"
@@ -66,7 +45,7 @@ const VideoPlayer = () => {
                 lineHeingt="1.33333333"
                 color="#241c15"
               >
-                Customize your new website layout
+                Offer appointments online
               </Text>
             </Box>
             <Box pb={{ base: "0", sm: "20px", md: "50px" }}>
@@ -77,20 +56,19 @@ const VideoPlayer = () => {
                 color="#241c15"
                 fontWeight="400"
               >
-                CyberDomain's website builder has pre-built, professional
-                layouts for every section, so you can quickly change the
-                structure of your site as much as you like without any coding
-                knowledge.
+                LAdd free appointment scheduling to your site so that customers
+                can book your services.
               </Text>
             </Box>
+
             <Center>
               <Box
-                w="190px"
+                w="280px"
                 h="50px"
                 borderRadius="50px"
                 bg="black"
                 margin="auto"
-                mt="0px"
+                mt="30px"
               >
                 <Button
                   className="btn-strtB"
@@ -104,15 +82,26 @@ const VideoPlayer = () => {
                   pos="-moz-initial"
                   fontWeight="bold"
                 >
-                  Start refining
+                  Start taking appointments
                 </Button>
               </Box>
             </Center>
           </Stack>
+          <Box
+            m={{ sm: "auto", base: "auto" }}
+            mb={{ sm: "0px" }}
+            justify={{ sm: "center", base: "center" }}
+          >
+            <Image
+              className="imgp"
+              src="https://eep.io/images/yzco4xsimv0y/UovsrBActJh9Y0S1EzDQH/59047fb94042838758ab30e8de2a816b/_NewAppt_Website-Builder_AUI.png?w=1520&fm=webp&q=80"
+              alt="Logo4"
+              height={[150, 300, 500]}
+              w={[200, 400, 600]}
+            />
+          </Box>
         </SimpleGrid>
       </Container>
     </Box>
   );
 };
-
-export default VideoPlayer;
