@@ -6,3 +6,36 @@
   transform: translateY(-10px);
   background-color: #ffe01b;
 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .videopla {
+    height: 150px;
+    width: 200px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .videopla {
+    height: 300px;
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 200px) and (max-width: 405px) {
+  .videopla {
+    height: 100px;
+    width: 150px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1667px) {
+  .videopla {
+    height: 600px;
+    width: 600px;
+  }
+}
+
+/*
+ height={[150, 300, 600]}
+              w={[200, 400, 600]}
+*/
