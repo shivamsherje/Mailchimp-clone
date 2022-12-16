@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Text, Button, Image } from "@chakra-ui/react";
+import { Box, Heading, Text, Button } from "@chakra-ui/react";
 import "./TopSection.css";
 const TopSections = () => {
   return (
@@ -14,6 +14,7 @@ const TopSections = () => {
           fontWeight="medium"
           className="heading-of-homepage"
           margin="auto"
+          mt="150px"
           w="60%"
           textAlign="center"
           fontFamily="Means Web,Georgia,Times,Times New Roman,serif"
@@ -27,7 +28,6 @@ const TopSections = () => {
           fontWeight={400}
           mt={{ base: "16px", md: "18px", lg: "25px" }}
           w="62%"
-          
           textAlign="center"
           lineHeight={1.8}
         >

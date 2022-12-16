@@ -5,7 +5,6 @@ import "./Pricing.css";
 function Pricing() {
   return (
     <Box bg="#f6f6f4" pb="80px">
-    
       <Heading
         fontWeight="medium"
         fontSize="40px"
@@ -25,7 +24,6 @@ function Pricing() {
             fontSize="20px"
             color="black"
             fontFamily="Means Web,Georgia,Times,Times New Roman,serif"
-
           >
             Primium
           </Heading>
@@ -40,8 +38,11 @@ function Pricing() {
           <Text fontWeight="semibold" color="black" display="flex">
             ₹
             <span>
-              <Heading   fontFamily="Means Web,Georgia,Times,Times New Roman,serif"
- fontWeight="medium" color="black">
+              <Heading
+                fontFamily="Means Web,Georgia,Times,Times New Roman,serif"
+                fontWeight="medium"
+                color="black"
+              >
                 {" "}
                 23,000
               </Heading>
@@ -110,7 +111,6 @@ function Pricing() {
             fontSize="20px"
             color="black"
             fontFamily="Means Web,Georgia,Times,Times New Roman,serif"
-
           >
             Standerd
           </Heading>
@@ -123,8 +123,11 @@ function Pricing() {
             ₹
             <span>
               {" "}
-              <Heading   fontFamily="Means Web,Georgia,Times,Times New Roman,serif"
- fontWeight="medium" color="black">
+              <Heading
+                fontFamily="Means Web,Georgia,Times,Times New Roman,serif"
+                fontWeight="medium"
+                color="black"
+              >
                 1,150
               </Heading>
             </span>
@@ -182,7 +185,6 @@ function Pricing() {
             fontSize="20px"
             color="black"
             fontFamily="Means Web,Georgia,Times,Times New Roman,serif"
-
           >
             Essentials
           </Heading>
@@ -191,12 +193,15 @@ function Pricing() {
             features.
           </Text>
           <Text fontSize="14px">starts at</Text>
-          <Text   fontWeight="semibold" color="black" display="flex">
+          <Text fontWeight="semibold" color="black" display="flex">
             ₹
             <span>
               {" "}
-              <Heading             fontFamily="Means Web,Georgia,Times,Times New Roman,serif"
- fontWeight="medium" color="black">
+              <Heading
+                fontFamily="Means Web,Georgia,Times,Times New Roman,serif"
+                fontWeight="medium"
+                color="black"
+              >
                 770
               </Heading>
             </span>
@@ -254,7 +259,6 @@ function Pricing() {
             fontSize="20px"
             color="black"
             fontFamily="Means Web,Georgia,Times,Times New Roman,serif"
-
           >
             Free
           </Heading>
@@ -262,12 +266,15 @@ function Pricing() {
             Easily create email campaigns and learn more about your customers.
           </Text>
           <Text fontSize="14px">starts at</Text>
-          <Text  fontWeight="semibold" color="black" display="flex">
+          <Text fontWeight="semibold" color="black" display="flex">
             ₹
             <span>
               {" "}
-              <Heading   fontFamily="Means Web,Georgia,Times,Times New Roman,serif"
- fontWeight="medium" color="black">
+              <Heading
+                fontFamily="Means Web,Georgia,Times,Times New Roman,serif"
+                fontWeight="medium"
+                color="black"
+              >
                 0
               </Heading>
             </span>
