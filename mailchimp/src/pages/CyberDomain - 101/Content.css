@@ -1,0 +1,15 @@
+.btn-hover-an{
+    transition: .1s ease-in-out;
+}
+
+.btn-hover-an:hover {
+    transform: translateY(-6px);
+    background-color: "white";
+}
+
+.btn-shadow{
+    background-color: black;
+    border-radius: 20px;
+    height: 45px;
+    width: max-content;
+}
