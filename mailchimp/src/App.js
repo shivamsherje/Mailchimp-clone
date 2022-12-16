@@ -2,13 +2,15 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import MainPage from "./pages/Homepage/MainPage";
 import Footer from "./components/Footer/Footer.tsx";
-import Products from "./pages/Products/Products";
+import Integrations from "./pages/Homepage/integrations";
+// import Products from "./pages/Products/Products";
 function App() {
   return (
     <div className="App">
       <Navbar />
       <MainPage />
-      <Products />
+      <Integrations/>
+      {/* <Products /> */}
       <Footer />
     </div>
   );

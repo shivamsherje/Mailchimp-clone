@@ -8,9 +8,10 @@
   text-align: left;
 }
 .price_section {
-  width: 90%;
-  height: auto;
   margin: auto;
+  width: 96%;
+  height: auto;
+
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   text-align: left;

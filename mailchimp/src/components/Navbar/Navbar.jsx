@@ -5,17 +5,19 @@ import Applogo from "../../assets/Applogo3.png";
 import website from "../../assets/website.png";
 import search from "../../assets/search.png";
 import DrawerExample from "./Drawer";
+import ProductDrawer from "./ProductDrawer";
+import ResourceDrawer from "./ResourceDrawer";
+import InspirationDrawer from "./InspirationDrawer";
 const Navbar = () => {
   return (
     <div className="navbar">
       <div>
-
         <DrawerExample />
       </div>
       <div className="navbar-div-1">
-        <h3>Products</h3>
-        <h3>Resources</h3>
-        <h3>Inspirations</h3>
+        <ProductDrawer ram="Products"/>
+        <ResourceDrawer ram="Resources"/>
+        <InspirationDrawer ram="Inspirations"/>
         <h3>Pricing</h3>
       </div>
       <div className="navbar-div-3">
