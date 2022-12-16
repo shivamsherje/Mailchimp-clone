@@ -1,6 +1,10 @@
 import Auto1 from "../../assets/autometion1.png";
 import Auto2 from "../../assets/autometion2.png";
 import Auto3 from "../../assets/autometion3.png";
+import Auto4 from "../../assets/autometion4.png";
+import Auto5 from "../../assets/autometion5.png";
+import Auto6 from "../../assets/autometion6.png";
+
 import React from "react";
 import TopSection from "./TopSection";
 import Gridcard from "./Gridcard";
@@ -31,10 +35,36 @@ const Autometion1 = [
   },
 ];
 
+const Autometion2 = [
+  {
+    id: 1,
+    image: Auto4,
+    heading:
+      "Mailchimp will help you focus on your most loyal and valuable customers.",
+    text: "",
+  },
+  {
+    id: 2,
+    image: Auto5,
+    heading: "Predict who’s likely to buy again",
+    text: "Create segments of customers based on their lifetime value and likelihood to purchase.",
+  },
+  {
+    id: 3,
+    image: Auto6,
+    heading: "Build customers for life",
+    text: "Use our intelligent predictions to tighten your targeting strategy, strengthen customer relationships, and drive repeat sales.",
+  },
+];
+
 const MainPage = () => {
   const [auto] = useState(Autometion1);
-  const heading1 ="Generate up to 4x more orders* with Customer Journey Builder automations";
+  const [auto2] = useState(Autometion2);
 
+  const heading1 =
+    "Generate up to 4x more orders* with Customer Journey Builder automations";
+  const heading2 =
+    "Get up to 88% more revenue* with our Customer Lifetime Value and Likelihood to Purchase segments";
 
   return (
     <div>
@@ -42,8 +72,9 @@ const MainPage = () => {
       <Gridcard />
       <Video />
       <Pricing />
-      <Automations  data={auto} heading={heading1} />
+      <Automations data={auto} heading={heading1} />
       <Accordation />
+      <Automations data={auto2} heading={heading2} />
     </div>
   );
 };

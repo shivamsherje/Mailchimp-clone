@@ -56,12 +56,6 @@ function Automations({ data, heading }) {
         ))}
       </Box>
     </Box>
-
-
-
-
-
-
   );
 }
 export default Automations;

@@ -1,6 +1,5 @@
 import { Box, Image, Text, Button } from "@chakra-ui/react";
-import "./Gridone.css"
-
+import "./Gridone.css";
 
 function Gridone(props) {
   console.log("shiv", props.image);
@@ -25,7 +24,7 @@ function Gridone(props) {
             {props.text}
           </Text>
           <Button
-           className="gridbuttons"
+            className="gridbuttons"
             bg="none"
             display="block"
             border="1px solid black"
