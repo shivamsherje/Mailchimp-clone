@@ -3,10 +3,12 @@ import React from "react";
 import Head3 from "./Head3";
 import Heading4 from "./Heading4";
 import Heading5 from "./Heading5";
+import Heading6 from "./Heading6";
 import Image2 from "./Image2";
 import "./Product.style.css";
 import ProductImage from "./ProductImage";
 import ProductImage2 from "./ProductImage2";
+import ProductImage3 from "./ProductImage3";
 import Promote from "./Promote";
 import Promote2 from "./Promote2";
 import { SellProduct } from "./SellProduct";
@@ -95,6 +97,8 @@ const Products = () => {
       <Promote2 />
       <ProductImage2 />
       <Heading5 />
+      <ProductImage3 />
+      <Heading6 />
     </Box>
   );
 };
