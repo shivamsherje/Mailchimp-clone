@@ -7,6 +7,7 @@ import Head3 from "./Head3";
 import Heading4 from "./Heading4";
 import Heading5 from "./Heading5";
 import Heading6 from "./Heading6";
+import Heading7 from "./Heading7";
 import Image2 from "./Image2";
 import "./Product.style.css";
 import ProductImage from "./ProductImage";
@@ -105,6 +106,7 @@ const Products = () => {
       <Decide />
       <Explore />
       <Faq />
+      <Heading7 />
     </Box>
   );
 };
