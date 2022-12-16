@@ -13,7 +13,7 @@ import "./Product.style.css";
 const WebLayout = () => {
   return (
     <Box backgroundColor="white" w="100%">
-      <Container as={Stack} maxW={"6xl"}>
+      <Container as={Stack} maxW={"6xl"} pt={10} pb={16}>
         <SimpleGrid
           columns={{ base: 1, sm: 1, md: 2 }}
           spacing={{ md: "16", sm: "0", base: "0" }}
