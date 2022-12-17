@@ -15,6 +15,7 @@ import useWindowSize from "./WindowSize";
 function Integrations() {
   const [height, width] = useWindowSize();
 
+  
   return (
     <>
       <Box width="90%" mb="80px" margin="auto">
