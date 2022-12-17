@@ -1,0 +1,15 @@
+.spanHeading{
+    text-decoration: underline;
+    color: teal;
+}
+.spanHeading:hover{
+    
+    color: black;
+    cursor: pointer;
+}
+form {
+    margin-top: 20px;
+}
+.label{
+    margin-bottom: 10px;
+}
