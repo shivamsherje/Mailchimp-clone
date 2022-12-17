@@ -7,7 +7,7 @@ nav{
     
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: flex-end;
     /* border: 1px solid red; */
     width: 66.666%;
     margin: auto;
@@ -75,9 +75,9 @@ nav{
 span{
     border-bottom: 1px dashed #000;
 }
-u{
+/* u{
     text-decoration: dotted;
-}
+} */
 
 /* bordered price */
 
@@ -137,3 +137,92 @@ u{
     gap: 32px;
     
 }
+
+.about{
+    width: 66.666%;
+    margin: auto;
+    /* border: 1px solid red; */
+    margin-bottom: 5px;
+    display: flex;
+    /* padding: 5px; */
+    justify-content: space-evenly;
+    align-items: baseline;
+    
+
+}
+
+.recommend_hid-2{
+    visibility: hidden;
+    border: 1px solid black;
+    width: 0px
+}
+
+.about div{
+    display: flex;
+    align-items: baseline;
+    gap: 150px;
+}
+
+.about p{
+    border-bottom: 1px solid black ;
+}
+
+.compare{
+   text-align: center;
+}
+.btn{
+    padding: 12px;
+    border-radius: 35px;
+    border:1px solid black;
+}
+
+
+/*  */
+
+
+.aptr{
+    margin: auto;
+    width: 80%;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.One{
+    width: 40%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+
+.hori{
+    border-right: 1px solid black;
+    height: 260px;
+}
+
+.two{
+    width: 40%;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.fre:hover{
+    background-color: yellow;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
