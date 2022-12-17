@@ -43,7 +43,7 @@ const Explore = () => {
           >
             <Box>
               <Center>
-                <Flex className="arrtxt" gap={"15px"}>
+                <Flex className="exptxt" gap={"15px"} mb={1}>
                   <Text pl={5} pr={5}>
                     How to Make a Website: A Guide for Building Your Website
                   </Text>
@@ -59,7 +59,7 @@ const Explore = () => {
               borderColor={"gray.700"}
             >
               <Center>
-                <Flex className="arrtxt" gap={"15px"}>
+                <Flex className="exptxt" gap={"15px"} mt={2} mb={1}>
                   <Text pl={5} pr={5}>
                     Website Design Tips for Non-Designers
                   </Text>
@@ -75,7 +75,7 @@ const Explore = () => {
               borderColor={"gray.700"}
             >
               <Center>
-                <Flex className="arrtxt" gap={"15px"}>
+                <Flex className="exptxt" gap={"15px"} mt={2} mb={1}>
                   <Text pl={5} pr={5}>
                     A Checklist for Better Website SEO
                   </Text>
@@ -91,7 +91,7 @@ const Explore = () => {
               borderColor={"gray.700"}
             >
               <Center>
-                <Flex className="arrtxt" gap={"15px"}>
+                <Flex className="exptxt" gap={"15px"} mt={2}>
                   <Text pl={5} pr={5}>
                     How to Create a Homepage That Drives Clicks
                   </Text>
