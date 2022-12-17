@@ -1,0 +1,42 @@
+.cardLogo, .cardTag{
+    filter: invert(100%);
+}
+
+.cardLogoCont{
+    position: relative;
+    bottom: 170px;
+    width: 200px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: -118px;
+}
+
+.cardLogo{
+    z-index: 99;
+    width: 65%;
+}
+
+.cardTag{
+    position: relative;
+    bottom: 25px;
+    width: 18px;
+    margin: auto;
+    z-index: 99;
+}
+
+.gradient{
+    position: relative;
+    z-index: 3;
+    background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0), rgba(0, 0, 0, 0.853));
+    bottom: 100%;
+}
+
+.gridCard:hover{
+    transform: scale(1.07);
+    transition: 200ms ease-in;
+}
+
+.gridCard{
+    transition: 100ms ease-in;
+    cursor: pointer;
+}
