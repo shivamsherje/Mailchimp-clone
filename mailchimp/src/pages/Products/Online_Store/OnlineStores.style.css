@@ -1,0 +1,46 @@
+.btn-strtOS {
+    transition: 0.2s ease-out;
+  }
+  
+  .btn-strtOS:hover {
+    transform: translateY(-10px);
+    background-color: #ffe01b;
+  }
+
+  .exptxt {
+    padding: 2px;
+  }
+  .exptxt:hover {
+    cursor: pointer;
+    background-color: #ffe01b;
+    border-radius: 20px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .videopla {
+      height: 200px;
+      width: 200px;
+    }
+  }
+  
+  @media screen and (min-width: 481px) and (max-width: 767px) {
+    .videopla {
+      height: 300px;
+      width: 400px;
+    }
+  }
+  
+  @media screen and (min-width: 200px) and (max-width: 405px) {
+    .videopla {
+      height: 200px;
+      width: 200px;
+    }
+  }
+  
+  @media screen and (min-width: 767px) and (max-width: 1667px) {
+    .videopla {
+      height: 600px;
+      width: 600px;
+    }
+  }
