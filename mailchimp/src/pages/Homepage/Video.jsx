@@ -15,6 +15,7 @@ const Video = () => {
         width="1200px"
         height="675px"
         poster={posters}
+        
       />
       <Text pt="20" className="videotext" color="white">
         Most email marketing platforms tell you how your campaigns perform. We

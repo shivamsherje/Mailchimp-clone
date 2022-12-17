@@ -14,6 +14,7 @@ function Pricing() {
         mb="40px"
       >
         Find the right plan
+        
       </Heading>
 
       <Box className="price_section">

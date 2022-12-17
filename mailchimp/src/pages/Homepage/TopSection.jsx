@@ -54,6 +54,7 @@ const TopSections = () => {
             pos="-moz-initial"
             fontWeight="bold"
           >
+          
             Sign Up
           </Button>
         </Box>
