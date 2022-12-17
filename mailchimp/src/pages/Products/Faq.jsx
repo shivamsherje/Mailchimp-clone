@@ -225,7 +225,7 @@ const Faq = () => {
                 <h2>
                   <AccordionButton>
                     <Box as="span" flex="1" textAlign="left">
-                      Which website builder is best for Mailchimp?
+                      Which website builder is best for CyberDomain?
                     </Box>
                     {isExpanded ? (
                       <MinusIcon fontSize="12px" />
@@ -237,7 +237,7 @@ const Faq = () => {
                 <AccordionPanel pb={4}>
                   <Text textAlign="left">
                     Ultimately, the best website builder is one that meets your
-                    specific business needs. With Mailchimp, you can build your
+                    specific business needs. With CyberDomain, you can build your
                     website and promote it using one single marketing platform
                     for free.
                   </Text>
