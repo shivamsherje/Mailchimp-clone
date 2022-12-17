@@ -1,9 +1,22 @@
 import { Button, Center, Container, Stack, Text, Box } from "@chakra-ui/react";
 import React from "react";
+import Decide from "./Decide";
+import Explore from "./Explore";
+import Faq from "./Faq";
 import Head3 from "./Head3";
+import Heading4 from "./Heading4";
+import Heading5 from "./Heading5";
+import Heading6 from "./Heading6";
+import Heading7 from "./Heading7";
 import Image2 from "./Image2";
 import "./Product.style.css";
 import ProductImage from "./ProductImage";
+import ProductImage2 from "./ProductImage2";
+import ProductImage3 from "./ProductImage3";
+import Promote from "./Promote";
+import Promote2 from "./Promote2";
+import { SellProduct } from "./SellProduct";
+import { SellProduct1 } from "./SellProduct1";
 import { Unsplash } from "./Unsplash";
 import VideoPlayer from "./VideoPlayer";
 import WebLayout from "./WebLayout";
@@ -44,8 +57,8 @@ const Products = () => {
             >
               Design and simplicity are at the core of our website builder.
               Easily create, customize, and promote a stunning website that's
-              search engine ready all on your own with the power of Mailchimp’s
-              platform.
+              search engine ready all on your own with the power of
+              CyberDomain’s platform.
             </Text>
             <Center>
               <Box
@@ -81,6 +94,19 @@ const Products = () => {
       <WebLayout />
       <VideoPlayer />
       <Unsplash />
+      <Heading4 />
+      <SellProduct />
+      <SellProduct1 />
+      <Promote />
+      <Promote2 />
+      <ProductImage2 />
+      <Heading5 />
+      <ProductImage3 />
+      <Heading6 />
+      <Decide />
+      <Explore />
+      <Faq />
+      <Heading7 />
     </Box>
   );
 };

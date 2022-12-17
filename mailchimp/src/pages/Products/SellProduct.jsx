@@ -1,36 +1,19 @@
-import React, { useEffect, useRef } from "react";
-import VideoP from "../../assets/videopl.mp4";
 import {
   Box,
   Stack,
   Container,
+  Image,
   Text,
   SimpleGrid,
   Button,
   Center,
 } from "@chakra-ui/react";
+import React from "react";
 import "./Product.style.css";
 
-const VideoPlayer = () => {
-  const videoEl = useRef(null);
-
-  const attemptPlay = () => {
-    videoEl &&
-      videoEl.current &&
-      videoEl.current.play().catch((error) => {
-        console.error("Error attempting to play", error);
-      });
-  };
-
-  useEffect(() => {
-    attemptPlay();
-  }, []);
-
+export const SellProduct = () => {
   return (
-    <Box
-      backgroundColor="white"
-      w="100%"
-    >
+    <Box backgroundColor="white" w="100%">
       <Container as={Stack} maxW={"6xl"} pt={10} pb={16}>
         <SimpleGrid
           columns={{ base: 1, sm: 1, md: 2 }}
@@ -41,23 +24,33 @@ const VideoPlayer = () => {
             mb={{ sm: "0px" }}
             justify={{ sm: "center", base: "center" }}
           >
-            <video
-              className="videopla"
-              playsInline
-              loop
-              muted
-              controls
-              alt="All the devices"
-              src={VideoP}
-              ref={videoEl}
+            <Image
+              className="imgp"
+              src="https://eep.io/images/yzco4xsimv0y/6WKMdFvtY6GTitMgqwuoyN/36408f9fd4f5bc53fa030e39a6f85aad/AUI_Website-Builder_New-Stores.png?w=1520&fm=webp&q=80"
+              alt="Logo4"
+              height={[150, 300, 500]}
+              w={[200, 400, 600]}
             />
           </Box>
 
           <Stack
             direction="column"
             py={4}
-            mt={{ md: "20%", sm: "0", base: "0" }}
+            mt={{ md: "14%", sm: "0", base: "0" }}
           >
+            <Box>
+              <Button
+                colorScheme="pink"
+                _hover={{
+                  background: "#ff3ebf",
+                  color: "white",
+                }}
+                borderRadius="20"
+                style={{ cursor: "text" }}
+              >
+                New
+              </Button>
+            </Box>
             <Box>
               <Text
                 fontWeight="400"
@@ -66,7 +59,7 @@ const VideoPlayer = () => {
                 lineHeingt="1.33333333"
                 color="#241c15"
               >
-                Customize your new website layout
+                Sell online and manage orders
               </Text>
             </Box>
             <Box pb={{ base: "0", sm: "20px", md: "50px" }}>
@@ -77,10 +70,10 @@ const VideoPlayer = () => {
                 color="#241c15"
                 fontWeight="400"
               >
-                CyberDomain's website builder has pre-built, professional
-                layouts for every section, so you can quickly change the
-                structure of your site as much as you like without any coding
-                knowledge.
+                Launch an online e-commerce store from your site for free—you
+                only pay when you make a sale. Then use built-in marketing
+                features to drive traffic and sales through our integrated
+                full-featured platform.
               </Text>
             </Box>
             <Center>
@@ -90,7 +83,7 @@ const VideoPlayer = () => {
                 borderRadius="50px"
                 bg="black"
                 margin="auto"
-                mt="0px"
+                mt="30px"
               >
                 <Button
                   className="btn-strtB"
@@ -104,7 +97,7 @@ const VideoPlayer = () => {
                   pos="-moz-initial"
                   fontWeight="bold"
                 >
-                  Start refining
+                  Start selling
                 </Button>
               </Box>
             </Center>
@@ -114,5 +107,3 @@ const VideoPlayer = () => {
     </Box>
   );
 };
-
-export default VideoPlayer;
