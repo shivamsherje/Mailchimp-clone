@@ -13,7 +13,6 @@ function App() {
       <Integrations/>
       <Products />
       <Footer /> 
-      <Footer />
     </div>
   );
 }
