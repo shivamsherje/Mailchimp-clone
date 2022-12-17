@@ -9,12 +9,12 @@ import PresentsMainPage from "./pages/CyberDomainPresents/PresentsMainPage";
 function App() {
   return (
     <div className="App">
-      {/* <Navbar />
+      <Navbar />
       <MainPage />
       <Integrations/>
       <Products />
-      <Footer />  */}
-      <PresentsMainPage />
+      <Footer /> 
+      {/* <PresentsMainPage /> */}
     </div>
   );
 }
