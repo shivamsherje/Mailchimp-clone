@@ -44,8 +44,7 @@ export default function Login() {
         res.map((el) => {
           console.log(typeof el.email);
           if (el.email === email && el.password === password) {
-            // navigate({ AddProduct });
-            <Link href={AddProduct}></Link>;
+            navigate("/addproduct");
             console.log("success");
           } else {
             alert("You are not a admin");

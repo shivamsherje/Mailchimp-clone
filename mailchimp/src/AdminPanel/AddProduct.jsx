@@ -2,7 +2,6 @@ import { useState } from "react";
 import {
   FormControl,
   FormLabel,
-  FormErrorMessage,
   Stack,
   FormHelperText,
   Button,
@@ -12,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 
 import { Select } from "@chakra-ui/react";
+import { useToast } from "@chakra-ui/react";
 
 function AddProduct({ onAddProduct }) {
   const [formState, setFormState] = useState({
@@ -21,6 +21,8 @@ function AddProduct({ onAddProduct }) {
     desc: "",
     image: "",
   });
+
+  const toast = useToast();
 
   const handleChange = (e) => {
     const { name, value, type } = e.target;
@@ -46,6 +48,7 @@ function AddProduct({ onAddProduct }) {
       color="white"
       backgroundColor="#0093E9"
       backgroundImage="linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)"
+      paddingTop={[20, 30, 40]}
     >
       <Stack
         spacing={8}
@@ -106,25 +109,16 @@ function AddProduct({ onAddProduct }) {
                 borderRight={"none"}
                 borderTop={"none"}
                 borderRadius={0}
-                
                 color={"grey"}
               >
-                <option
-                  color={"black"}
-                 
-                  value="Premium 23,000/month"
-                >
+                <option color={"black"} value="Premium 23,000/month">
                   Premium 23,000/month
                 </option>
                 <option value="Standard 1,150/month">
                   Standard 1,150/month
                 </option>
-                <option value="Essential 770/month">
-                  Essential 770/month
-                </option>
-                <option value="30 Days Free Trial">
-                  30 Days Free Trial
-                </option>
+                <option value="Essential 770/month">Essential 770/month</option>
+                <option value="30 Days Free Trial">30 Days Free Trial</option>
               </Select>
               <FormLabel>Website Description</FormLabel>
               <Input
@@ -161,6 +155,15 @@ function AddProduct({ onAddProduct }) {
                     bg: "blue.500",
                   }}
                   type="submit"
+                  onClick={() =>
+                    toast({
+                      title: "Website created.",
+                      description: "We've created your Website for you.",
+                      status: "success",
+                      duration: 9000,
+                      isClosable: true,
+                    })
+                  }
                 >
                   Create Website
                 </Button>
