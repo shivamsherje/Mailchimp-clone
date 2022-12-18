@@ -1,0 +1,18 @@
+{
+  "admin": [
+    {
+      "email": "deepak.fathkar@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "users": [
+    {
+      "title": "dfd",
+      "category": "dgg",
+      "pricing": "Premium 23,000/month",
+      "desc": "dgdg",
+      "image": "https://cdn.shopify.com/s/files/1/0210/2968/3222/articles/trending_products_to_sell_in_India_ad8fc9e0-5052-44bf-bd93-7bec4335f5ee.jpg?v=1647462399",
+      "id": 8
+    }
+  ]
+}
