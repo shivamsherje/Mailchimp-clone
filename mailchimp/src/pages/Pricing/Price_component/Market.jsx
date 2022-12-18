@@ -1,7 +1,5 @@
 import { Button } from '@chakra-ui/react';
 import React, { useEffect, useState } from 'react'
-import Navbar from '../../../components/Navbar/Navbar';
-import Footer from '../../../components/Footer/Footer';
 import Faq from '../Pricing_components/Faq';
 import "./MarketStyle.css";
 
@@ -12,7 +10,6 @@ const Market = () => {
 
   return (
     <div>
-        <Navbar></Navbar>
         <nav>Marketing Platform</nav>
         
         <div className='price'>
@@ -350,7 +347,6 @@ const Market = () => {
             <p><u>Reach inboxes when it matters most</u></p>
             <p><u>MailChimp vs. GoDaddy: Website Builder Review and Comparison</u></p>
         </div>
-        <Footer></Footer>
     </div>
   )
 }
