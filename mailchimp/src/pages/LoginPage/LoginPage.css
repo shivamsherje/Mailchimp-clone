@@ -1,6 +1,3 @@
-form {
-    margin-top: 20px;
-}
 .spanHeading{
     text-decoration: underline;
     color: teal;
@@ -10,11 +7,17 @@ form {
     color: black;
     cursor: pointer;
 }
+form {
+    margin-top: 20px;
+}
+.label{
+    margin-bottom: 10px;
+}
 @media screen and (max-width:767px) and (min-width:280px) {
-    .mainBox{
+    .mainbox{
         width: 100%;
     }
-    .backImage{
+    .backimage{
         display: none;
     }
 }
