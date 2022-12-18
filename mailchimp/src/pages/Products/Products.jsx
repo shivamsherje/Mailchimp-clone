@@ -20,6 +20,7 @@ import { SellProduct1 } from "./SellProduct1";
 import { Unsplash } from "./Unsplash";
 import VideoPlayer from "./VideoPlayer";
 import WebLayout from "./WebLayout";
+import {Link} from "react-router-dom"
 
 const Products = () => {
   return (
@@ -36,6 +37,7 @@ const Products = () => {
             >
               WEBSITE BUILDER
             </Text>
+          
             <Text
               mt={"1.75rem"}
               fontWeight="300"
@@ -47,6 +49,8 @@ const Products = () => {
             >
               Create a website for free
             </Text>
+
+
             <Text
               mt={"1.875rem"}
               fontFamily="Graphik Web,Helvetica Neue,Helvetica,Arial,Verdana,sans-serif"
@@ -69,6 +73,7 @@ const Products = () => {
                 margin="auto"
                 mt="30px"
               >
+              <Link to={"/UserProducts"}>
                 <Button
                   className="btn-strtB"
                   w="100%"
@@ -83,6 +88,7 @@ const Products = () => {
                 >
                   Start Building For free
                 </Button>
+                </Link>
               </Box>
             </Center>
           </Stack>

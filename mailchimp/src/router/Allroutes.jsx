@@ -12,6 +12,9 @@ import HelpCenterMainPage from "../pages/HelpCenter/HelpCenterMainPage"
 import Login from "../AdminPanel/Login";
 import AddProduct from "../AdminPanel/AddProduct";
 import CBMainPage from "../pages/CyberDomain - 101/CBMainPage"
+import AdminProducts from "../AdminPanel/AdminProducts";
+import UserProducts from "../AdminPanel/UserProducts";
+
 
 const Allroutes = () => {
 
@@ -30,6 +33,8 @@ const Allroutes = () => {
       <Route path="/login" element={<Login/>}> </Route>
       <Route path="/addproduct" element={<AddProduct/>}> </Route>
 
+      <Route path="/AdminProducts" element={<AdminProducts/>}> </Route>
+      <Route path="/UserProducts" element={<UserProducts/>}> </Route>
 
     </Routes>
   );
