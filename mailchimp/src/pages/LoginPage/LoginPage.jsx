@@ -1,13 +1,9 @@
 import {
-  Alert,
-  AlertIcon,
-  AlertTitle,
   Box,
   Button,
   Checkbox,
   Flex,
   Heading,
-  HStack,
   Image,
   Input,
   InputGroup,
@@ -15,24 +11,25 @@ import {
   Text,
 } from "@chakra-ui/react";
 import React from "react";
-import PasswordInput from "./PasswordInput";
 import "./LoginPage.css";
 import onlyLogo from "../../assets/Onlylogo.png";
 import { useState } from "react";
 import showe from "../../assets/show.png";
 import hide from "../../assets/hide.png";
-
+import { useNavigate,Link } from "react-router-dom";
 const LoginPage = () => {
   const user = JSON.parse(localStorage.getItem("User"));
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [show, setShow] = React.useState(false);
   const handleClick = () => setShow(!show);
+  const navigate = useNavigate();
+
    const redirect=()=>{
     if((user.email===email)||(user.username===email)){
       if(user.password===password){
-        alert('aaja dekh le ')
-       
+        
+       navigate('/addproduct')
       }
 
     }
@@ -51,7 +48,9 @@ const LoginPage = () => {
           position="absolute"
           left={4}
         >
+          <Link to="/">
           <Image src={onlyLogo} w={20} />
+          </Link>
           <Heading mt="30%">Log In</Heading>
           <Text mt={5}>
             Need a Mailchimp account?{" "}
@@ -83,9 +82,10 @@ const LoginPage = () => {
                 </Button>
               </InputRightElement>
             </InputGroup>
-            <Button w="100%" mt={10} bgColor="teal.400" onClick={redirect}>
+            <Button w="100%" mt={10} mb={5} bgColor="teal.400" onClick={redirect}>
               Log in
             </Button>
+            <Link to="/login">Go to admin panel</Link>
             <Checkbox
               ml="30%"
               mt="8"
@@ -95,11 +95,11 @@ const LoginPage = () => {
               defaultChecked
             >
               Keep me Logged in
-            </Checkbox>
             <Flex justifyContent="center" gap={5}>
               <Text className="spanHeading">Forgot username? </Text>
               <Text className="spanHeading"> Forgot password?</Text>
             </Flex>
+            </Checkbox>
             <Text textAlign="center" className="spanHeading">
               Can't Log In?
             </Text>
