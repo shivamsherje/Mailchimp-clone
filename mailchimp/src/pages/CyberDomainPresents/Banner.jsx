@@ -12,7 +12,7 @@ import React from "react";
 function Banner() {
   return (
     <Box>
-      <Box py={"70px"} px={"5%"} bgColor={"#241b15"}>
+      <Box py={"70px"} px={"5%"} pt={"150px"} bgColor={"#241b15"}>
         <Grid templateColumns={"35% 55%"} gap={"10%"}>
           <GridItem textAlign={"left"}>
             <Flex textAlign={"left"} flexDirection={"column"} justifyContent={"center"} h={"100%"}>

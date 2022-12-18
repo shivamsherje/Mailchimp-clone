@@ -11,6 +11,7 @@ import PresentsMainPage from "../pages/CyberDomainPresents/PresentsMainPage"
 import HelpCenterMainPage from "../pages/HelpCenter/HelpCenterMainPage"
 import Login from "../AdminPanel/Login";
 import AddProduct from "../AdminPanel/AddProduct";
+import CBMainPage from "../pages/CyberDomain - 101/CBMainPage"
 const Allroutes = () => {
 
   return (
@@ -22,8 +23,9 @@ const Allroutes = () => {
       <Route path="/loginpage" element={<LoginPage/>}> </Route>
       <Route path="/signuppage" element={<SignupPage/>}> </Route>
       <Route path="/main" element={<Main/>}>  </Route>
-      <Route path="/presentsmainpage" element={<PresentsMainPage/>}> </Route>
-      <Route path="/helpcentermainpage" element={<HelpCenterMainPage/>}> </Route>
+      <Route path="/presents" element={<PresentsMainPage/>}> </Route>
+      <Route path="/help-center" element={<HelpCenterMainPage />}> </Route>
+      <Route path="/cyberdomain101" element={<CBMainPage/>}> </Route>
       <Route path="/login" element={<Login/>}> </Route>
       <Route path="/addproduct" element={<AddProduct/>}> </Route>
 
