@@ -7,11 +7,13 @@ import {
     DrawerHeader,
     DrawerOverlay,
     Text,
-    useDisclosure,
+  useDisclosure,
   } from "@chakra-ui/react";
   import React from "react";
   import TextComponent from "./TextComponent";
   import {Link} from 'react-router-dom'
+import TextComponent from "./TextComponent";
+  import {Link} from "react-router-dom"
   
   const ResourceDrawer = ({ ram }) => {
     const { isOpen, onOpen, onClose } = useDisclosure();

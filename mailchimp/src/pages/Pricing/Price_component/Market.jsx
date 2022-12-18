@@ -1,8 +1,13 @@
 import { Button } from '@chakra-ui/react';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import Faq from '../Pricing_components/Faq';
 import "./MarketStyle.css";
 
+
 const Market = () => {
+
+
+
   return (
     <div>
         <nav>Marketing Platform</nav>
@@ -80,7 +85,6 @@ const Market = () => {
                     <div className='stan1'>
                         <h3>Premium</h3>
                         <p>Our most advanced tools, unlimited contacts, and priority support; built for teams.</p>
-                        
                         <div>
                             <p>Starts at</p>
                             <div className='convert'>
@@ -88,10 +92,7 @@ const Market = () => {
                             </div>
                             <p>/month*</p>
                         </div>
-
-
-                        <Button className='btn'>Buy Now</Button>
-                        
+                        <Button className='btn'>Buy Now</Button> 
                         <div>
                             <p>*<u>Overages</u> apply if contact or email send limit is exceeded.</p>
                             <span>Learn more</span>
@@ -129,34 +130,30 @@ const Market = () => {
                 <div className='standard_box'>
                     <p className='recommend'>Mailchimp Recommends</p> 
                     <div className='stan' >
-                        <h3>Premium</h3>
-                        <p>Our most advanced tools, unlimited contacts, and priority support; built for teams.</p>
-                        
+                        <h3>Standard</h3>
+                        <p>Sell even more with personalization, optimization tools, and enhanced automations.</p>                        
                         <div>
                             <p>Starts at</p>
                             <div className='convert'>
-                                &#x00024;<h2>23,000</h2>
+                                &#x00024;<h2>1,150</h2>
                             </div>
                             <p>/month*</p>
                         </div>
-
-
                         <Button className='btn'>Buy Now</Button>
-
                         <div>
                             <p>*<u>Overages</u> apply if contact or email send limit is exceeded.</p>
                             <span>Learn more</span>
                         </div>
 
-                        <p>150,000</p>
-                        <p>Unlimited</p>
+                        <p>6,000</p>
+                        <p>5 Seats</p>
                         <p>Phone & Priority Support</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
-                        <p>5 Roles</p>
+                        <p>4 Roles</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
@@ -167,10 +164,10 @@ const Market = () => {
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
                     </div>
                 </div>
 
@@ -180,13 +177,13 @@ const Market = () => {
                 <div className='pirce_box'>
                     <p  className='recommend_hid'>Mailchimp Recommends</p>
                     <div className='stan1'>
-                        <h3>Premium</h3>
-                        <p>Our most advanced tools, unlimited contacts, and priority support; built for teams.</p>
+                        <h3>Essentials</h3>
+                        <p>Send the right content at the right time with testing and the scheduling features.</p>
                         
                         <div>
                             <p>Starts at</p>
                             <div className='convert'>
-                                &#x00024;<h2>23,000</h2>
+                                &#x00024;<h2>770</h2>
                             </div>
                             <p>/month*</p>
                         </div>
@@ -199,29 +196,29 @@ const Market = () => {
                         </div>
 
 
-                        <p>150,000</p>
-                        <p>Unlimited</p>
+                        <p>5,000</p>
+                        <p>3 Seats</p>
                         <p>Phone & Priority Support</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
-                        <p>5 Roles</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>Enhanced</p>
+                        <p>2 Roles</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
                     </div>
                 </div>
 
@@ -231,13 +228,13 @@ const Market = () => {
                 <div className='pirce_box2'>
                     <p  className='recommend_hid'>Mailchimp Recommends</p>
                     <div className='stan1'>
-                        <h3>Premium</h3>
+                        <h3>Free</h3>
                         <p>Our most advanced tools, unlimited contacts, and priority support; built for teams.</p>
 
                         <div>
                             <p>Starts at</p>
                             <div className='convert'>
-                                &#x00024;<h2>23,000</h2>
+                                &#x00024;<h2>0</h2>
                             </div>
                             <p>/month*</p>
                         </div>
@@ -250,29 +247,29 @@ const Market = () => {
                         </div>
 
 
-                        <p>150,000</p>
-                        <p>Unlimited</p>
+                        <p>2,500</p>
+                        <p>1 Seats</p>
                         <p>Phone & Priority Support</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
                         <p>&#x2713;</p>
-                        <p>5 Roles</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>Enhanced</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
-                        <p>&#x2713;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
+                        <p className='cross'>&#x2716;</p>
                     </div>    
                 </div>
 
@@ -282,9 +279,9 @@ const Market = () => {
         <div className='about'>
             <u className='recommend_hid-2'>it is not visiable</u>   
             <div>
-                <p>About Premium</p>
-                <p>About Standard</p>
-                <p>About Essentials</p>
+                <p><u>About Premium</u></p>
+                <p><u>About Standard</u></p>
+                <p><u>About Essentials</u></p>
                 <p><u>About Free</u></p>
             </div>  
         </div>
@@ -311,7 +308,7 @@ const Market = () => {
 
 {/* Two-factor, Rate for nonprofits */}
 
-<div className='aptr'>
+        <div className='aptr'>
             <div className='One' >
                 <h1>Two-factor authentication discount</h1>
                 <p>At Mailchimp, we’re serious about security. We offer a 10% discount for 1 month when you add two-factor authentication to your Mailchimp account with an app like Google Authenticator or SMS two-factor authentication.</p>
@@ -319,7 +316,7 @@ const Market = () => {
                 <Button className='btn'>Get started</Button>
             </div>
 
-            <div className='hori'></div>
+            <div className='vert'></div>
 
             <div className='two'>
                 <h1>Rates for nonprofits and charities</h1>
@@ -328,6 +325,28 @@ const Market = () => {
             </div>
         </div>
 
+{/* FAQ section */}
+
+        <Faq></Faq>
+
+{/* you be in good company */}
+
+        <div className='you'>
+            <h1>You'll be in good company</h1>
+            <div className='company_img'>
+                <img src='https://eep.io/images/yzco4xsimv0y/6EIjMFs2ZyQWsmOOYc4cGe/19d62aa558c8f5d4c4bf222e7e36571b/EastFork.png?w=260&fm=webp&q=70' alt='east_fork'/>
+                <img src='https://eep.io/images/yzco4xsimv0y/5Z9C7t0HDyyaWu60iWE00A/2e3d2eaa056d0d86c6712c88d239762f/chronicle-books-logo.jpg?w=260&fm=webp&q=70' alt='chronicle-books'/>
+                <img src='https://eep.io/images/yzco4xsimv0y/vHWiUSlrS8sSQc0cCesGY/429d539471239d6ffcdb8be8767140cb/Fader-Logo-800px-144dpi.jpg?w=260&fm=webp&q=70' alt='fader'/>
+                <img src='https://eep.io/images/yzco4xsimv0y/2fZXnWbDK8ugIaCW8Qus0i/1b8f1c4aa80dda874418e4bfa29b60e5/Sweat.png?w=260&fm=webp&q=70' alt='sweat'/>
+            </div>
+        </div>
+
+        <div className='re'>
+            <h4>Related Links:</h4>
+            <p><u>Create must click landing pages</u></p>
+            <p><u>Reach inboxes when it matters most</u></p>
+            <p><u>MailChimp vs. GoDaddy: Website Builder Review and Comparison</u></p>
+        </div>
     </div>
   )
 }

@@ -34,7 +34,7 @@ function Content() {
     }
 
   return (
-    <Box mt={"100px"}>
+    <Box mb={"80px"} mt={"100px"}>
       <Box mb={"100px"}>
         <Text fontSize={"3xl"}>{filter}</Text>
         <Flex justifyContent={"center"} gap={4} mt={3}>

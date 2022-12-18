@@ -23,11 +23,9 @@ const Navbar = () => {
         <h3>Pricing</h3>
         </Link>
       </div>
-      <div className="navbar-div-3">
-        <Link to="/">
-        <img src={Applogo} alt="cyber-domain" />
-        </Link>
-      </div>
+        <div className="navbar-div-3">
+          <img src={Applogo} alt="cyber-domain" />
+        </div>
       <div className="navbar-div-2">
         <div className="sales">
           <h3>Sales:</h3>
