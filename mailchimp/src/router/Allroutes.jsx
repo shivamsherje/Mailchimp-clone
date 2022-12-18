@@ -10,6 +10,7 @@ import Main from "../pages/CyberDomain - 101/Main"
 import PresentsMainPage from "../pages/CyberDomainPresents/PresentsMainPage"
 import HelpCenterMainPage from "../pages/HelpCenter/HelpCenterMainPage"
 import Login from "../AdminPanel/Login";
+import AddProduct from "../AdminPanel/AddProduct";
 const Allroutes = () => {
 
   return (
@@ -24,6 +25,8 @@ const Allroutes = () => {
       <Route path="/presentsmainpage" element={<PresentsMainPage/>}> </Route>
       <Route path="/helpcentermainpage" element={<HelpCenterMainPage/>}> </Route>
       <Route path="/login" element={<Login/>}> </Route>
+      <Route path="/addproduct" element={<AddProduct/>}> </Route>
+
 
     </Routes>
   );
