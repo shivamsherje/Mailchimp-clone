@@ -15,7 +15,8 @@ import {
   import TextComponent from "./TextComponent";
   import cdlogo from '../../assets/cdlogo.png'
   import courier from '../../assets/courier.png'
-  import rightArrow from '../../assets/right-up.png'
+import rightArrow from '../../assets/right-up.png'
+  import {Link} from "react-router-dom"
 
   const InspirationDrawer = ({ ram }) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -41,9 +42,15 @@ import {
               <Image src={cdlogo} alt='cd logo' width="18rem" />
               <Image src={rightArrow} width="20px" mt={4} ml={2} height="20px" _hover={{height:"30px",mt:"10px"}}/>
               </Flex>
-              <TextComponent >Podcasts</TextComponent>
-              <TextComponent >Series</TextComponent>
-              <TextComponent >Films</TextComponent>
+              <Link to={"/presents"}>
+                <TextComponent >Podcasts</TextComponent>
+              </Link>
+                <Link to={"/presents"}>
+                  <TextComponent >Series</TextComponent>
+                </Link>
+              <Link to={"/presents"}>
+                <TextComponent >Films</TextComponent>
+              </Link>
               <Divider mt={10} mb={10} orientation="horizontal" />
               <Flex>
               <Image ml={-8} src={courier} alt='courier logo' width="18rem" />
