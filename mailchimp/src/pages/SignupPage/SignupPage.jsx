@@ -120,6 +120,8 @@ const SignupPage = () => {
                 Sign Up
               </Button>
             </form>
+
+            
             <Text mt={5}>
               Invisible reCAPTCHA by Google{" "}
               <span className="spanHeading"> Privacy Policy</span> and{" "}
