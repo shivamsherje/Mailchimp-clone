@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { getProducts, addProduct, deleteProduct } from "./api";
 import AddProduct from "./AddProduct";
 import { Center, Text } from "@chakra-ui/react";
-import { PinInput, PinInputField } from "@chakra-ui/react";
 import React from "react";
 import {
   Table,
@@ -17,12 +16,11 @@ import {
   Image,
   Select,
   Flex,
-  Stack,
-  FormControl,
-  HStack,
 } from "@chakra-ui/react";
+import { useToast } from "@chakra-ui/react";
 
-function Products() {
+function AdminProducts() {
+  const toast = useToast();
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
   const [limit, setLimit] = useState(5);
@@ -43,7 +41,13 @@ function Products() {
     // make a post request call
     addProduct(data).then(() => {
       fetchCitiesDataAndUpdate(page, limit, srt);
-      alert(`Product has been added successfully`);
+      toast({
+        title: "Website created.",
+        description: "We've created your Website for you.",
+        status: "success",
+        duration: 9000,
+        isClosable: true,
+      });
     });
   };
 
@@ -158,4 +162,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default AdminProducts;
