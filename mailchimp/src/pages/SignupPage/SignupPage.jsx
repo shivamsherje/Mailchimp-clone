@@ -42,8 +42,9 @@ const SignupPage = () => {
           h="153vh"
           bgColor="white"
         >
-            <Link to="/"></Link>
+            <Link to="/">
           <Image src={onlyLogo} w={20} />
+            </Link>
           <Box w="70%" ml="18%">
             <Heading mt="10%">Sign up for CyberDomain</Heading>
             <Text mt={5}>
