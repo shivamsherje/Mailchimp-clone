@@ -7,10 +7,13 @@ import {
     DrawerHeader,
     DrawerOverlay,
     Text,
-    useDisclosure,
+  useDisclosure,
   } from "@chakra-ui/react";
   import React from "react";
   import TextComponent from "./TextComponent";
+  import {Link} from 'react-router-dom'
+import TextComponent from "./TextComponent";
+  import {Link} from "react-router-dom"
   
   const ResourceDrawer = ({ ram }) => {
     const { isOpen, onOpen, onClose } = useDisclosure();
@@ -33,8 +36,12 @@ import {
             <DrawerHeader></DrawerHeader>
             <DrawerBody>
               <Text mt={5} mb={5} fontSize="sm">LEARN — </Text>
+              <Link to="/main">
               <Text mt={5} mb={5} fontSize="xl" _hover={{color:"teal",cursor:"pointer"}}>Cyberdomain 101 </Text>
+              </Link>
+              <Link to="/helpcentermainpage">
               <Text mt={5} mb={5} fontSize="xl" _hover={{color:"teal",cursor:"pointer"}}>Help Center </Text>
+              </Link>
               <TextComponent >Marketing Library</TextComponent>
               <Divider mt={10} mb={10} orientation="horizontal" />
               <Text fontSize="sm" mt={5} mb={5}>COMMUNITY— </Text>

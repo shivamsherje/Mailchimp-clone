@@ -13,7 +13,7 @@ import React from 'react'
 
 function Banner() {
   return (
-    <Box>
+    <Box pt={"80px"}>
       <Box py={"70px"} px={"15%"} bgColor={"#fbeeca"}>
         <Grid templateColumns={"repeat(2, 1fr)"}>
           <GridItem textAlign={"left"}>

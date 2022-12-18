@@ -8,6 +8,7 @@ import DrawerExample from "./Drawer";
 import ProductDrawer from "./ProductDrawer";
 import ResourceDrawer from "./ResourceDrawer";
 import InspirationDrawer from "./InspirationDrawer";
+import {Link} from 'react-router-dom'
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -18,11 +19,13 @@ const Navbar = () => {
         <ProductDrawer ram="Products"/>
         <ResourceDrawer ram="Resources"/>
         <InspirationDrawer ram="Inspirations"/>
+        <Link to="/pricing">
         <h3>Pricing</h3>
+        </Link>
       </div>
-      <div className="navbar-div-3">
-        <img src={Applogo} alt="cyber-domain" />
-      </div>
+        <div className="navbar-div-3">
+          <img src={Applogo} alt="cyber-domain" />
+        </div>
       <div className="navbar-div-2">
         <div className="sales">
           <h3>Sales:</h3>
@@ -30,6 +33,8 @@ const Navbar = () => {
         </div>
         <img src={website} alt="website" />
         <img src={search} alt="search" />
+        <Link to="/LoginPage">
+
         <Button
           className="btn-signup"
           w="100%"
@@ -42,9 +47,13 @@ const Navbar = () => {
           border="1px solid black"
           pos="-moz-initial"
           fontWeight="bold"
-        >
+          >
+          
           Login
+          
         </Button>
+          </Link>
+          <Link to="/SignupPage">
         <Button
           className="btn-signup"
           w="100%"
@@ -57,9 +66,10 @@ const Navbar = () => {
           border="1px solid black"
           pos="-moz-initial"
           fontWeight="bold"
-        >
+          >
           Sign Up
         </Button>
+          </Link>
       </div>
     </div>
   );

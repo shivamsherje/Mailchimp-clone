@@ -6,4 +6,4 @@ const Transactional = () => {
   )
 }
 
-export default Transactional;
+export default Transactional

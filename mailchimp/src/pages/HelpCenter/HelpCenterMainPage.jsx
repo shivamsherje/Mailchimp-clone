@@ -6,17 +6,18 @@ import Search from './Search'
 import "./Content.css"
 import Help from './Help'
 import BottomSection from './BottomSection'
+import { Box } from '@chakra-ui/react'
 
 function HelpCenterMainPage() {
     return (
-        <main>
+        <Box>
             <Banner />
             <Search />
             <Guides />
             <ContactSupport />
             <Help />
             <BottomSection />
-        </main>
+        </Box>
     )
 }
 
