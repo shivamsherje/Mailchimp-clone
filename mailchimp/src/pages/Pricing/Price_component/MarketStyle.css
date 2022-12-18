@@ -2,7 +2,7 @@
 nav{
     border-top: 1px solid black;
     text-align: center;
-    margin-top: 100px;
+    padding-top: 20px;
 }
 
 .price{
@@ -148,7 +148,6 @@ span{
     width: 66.666%;
     margin: auto;
     /* border: 1px solid red; */
-    margin-bottom: 5px;
     display: flex;
     /* padding: 5px; */
     justify-content: space-evenly;
@@ -166,7 +165,7 @@ span{
 .about div{
     display: flex;
     align-items: baseline;
-    gap: 150px;
+    
 }
 
 .about p:hover{

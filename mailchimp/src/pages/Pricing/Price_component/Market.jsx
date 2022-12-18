@@ -13,9 +13,9 @@ const Market = () => {
         <nav>Marketing Platform</nav>
         
         <div className='price'>
-            <div className='PriceList'>
-                <label for='p'>How many contacts do you have?</label>
-                <select id='p'>
+            <div style={{gap:"20px"}} className='PriceList'>
+                <label style={{borderRight:"1px solid gray"}} for='p'>How many contacts do you have?</label>
+                <select style={{border:"1px solid black"}} id='p'>
                     <option>500</option>
                     <option>1,500</option>
                     <option>2,500</option>

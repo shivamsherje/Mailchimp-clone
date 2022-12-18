@@ -46,6 +46,7 @@ const Faq = () => {
         <div className='f123'>
             <h1>FAQs</h1>
         </div>
+        <br/>
         <div className='wrap'>
             <div className='acc'>
                 {faq_data.map((item,i)=>(
