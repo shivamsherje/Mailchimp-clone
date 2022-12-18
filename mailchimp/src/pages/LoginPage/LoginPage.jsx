@@ -49,12 +49,16 @@ const LoginPage = () => {
           left={4}
         >
           <Link to="/">
-          <Image src={onlyLogo} w={20} />
+          <Image mt="15%" src={onlyLogo} w={"60px"} />
           </Link>
-          <Heading mt="30%">Log In</Heading>
+          <Heading mt="5%" >Log In</Heading>
           <Text mt={5}>
             Need a CyberDomain account?{" "}
+
+            <Link to={"/signuppage"}>
             <span className="spanHeading">Create an account</span>{" "}
+
+            </Link>
           </Text>
           <form>
             <Text mb={2}>Username Or Email</Text>
@@ -85,9 +89,8 @@ const LoginPage = () => {
             <Button w="100%" mt={10} mb={5} bgColor="teal.400" onClick={redirect}>
               Log in
             </Button>
-            <Link to="/login">Go to admin panel</Link>
             <Checkbox
-              ml="30%"
+              ml="10%"
               mt="8"
               mb="8"
               size="lg"
@@ -103,6 +106,11 @@ const LoginPage = () => {
             <Text textAlign="center" className="spanHeading">
               Can't Log In?
             </Text>
+
+            <Box mt={10} fontSize={"2xl"} textDecoration="underline" color={'teal'} textAlign={'center'}>
+            <Link  to="/login">Go to admin panel</Link>
+            </Box>
+
             <Text fontSize="12px" mt="80px">
               ©2001–2022 All Rights Reserved. Mailchimp® is a registered
               trademark of The Rocket Science Group, LLC.{" "}

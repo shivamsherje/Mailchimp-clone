@@ -43,13 +43,13 @@ const SignupPage = () => {
           bgColor="white"
         >
             <Link to="/">
-          <Image src={onlyLogo} w={20} />
+          <Image mt={20} src={onlyLogo} w={"60px"} />
             </Link>
           <Box w="70%" ml="18%">
             <Heading mt="10%">Sign up for CyberDomain</Heading>
             <Text mt={5}>
               Create a free account or
-              <span className="spanHeading">log in</span>{" "}
+              <span className="spanHeading">{" "} log in</span>
             </Text>
             <form>
               <FormControl isRequired>
@@ -59,7 +59,6 @@ const SignupPage = () => {
                   size="lg"
                   variant="outline"
                   focusBorderColor="blue.500"
-                  placeholder="First name"
                   onChange={(e) => setEmail(e.target.value)}
                 />
               </FormControl>
@@ -70,7 +69,6 @@ const SignupPage = () => {
                   size="lg"
                   variant="outline"
                   focusBorderColor="blue.500"
-                  placeholder="First name"
                   onChange={(e) => setUsername(e.target.value)}
                 />
               </FormControl>
@@ -116,9 +114,11 @@ const SignupPage = () => {
                 acknowledge the{" "}
                 <span className="spanHeading">Global Privacy Statement.</span>
               </Text>
+              <Link to={"/loginpage"}>
               <Button mt={10} bgColor="teal.400" onClick={localStorage.setItem("User", JSON.stringify(user))}>
                 Sign Up
               </Button>
+              </Link>
             </form>
 
             
