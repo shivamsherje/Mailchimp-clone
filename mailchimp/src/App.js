@@ -1,17 +1,13 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import MainPage from "./pages/Homepage/MainPage";
 import Footer from "./components/Footer/Footer.tsx";
-import Integrations from "./pages/Homepage/integrations";
-import OnlineStores from "./pages/Products/Online_Store/OnlineStores"
 
+import Allroutes from "./router/Allroutes";
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <MainPage />
-      <Integrations/>
-      <OnlineStores />
+      <Allroutes/>
       <Footer /> 
     </div>
   );
