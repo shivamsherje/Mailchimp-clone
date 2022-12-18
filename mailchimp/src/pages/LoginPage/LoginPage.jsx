@@ -53,7 +53,7 @@ const LoginPage = () => {
           </Link>
           <Heading mt="30%">Log In</Heading>
           <Text mt={5}>
-            Need a Mailchimp account?{" "}
+            Need a CyberDomain account?{" "}
             <span className="spanHeading">Create an account</span>{" "}
           </Text>
           <form>
