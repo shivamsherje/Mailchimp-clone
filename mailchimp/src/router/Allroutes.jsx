@@ -9,7 +9,7 @@ import SignupPage from "../pages/SignupPage/SignupPage"
 import Main from "../pages/CyberDomain - 101/Main"
 import PresentsMainPage from "../pages/CyberDomainPresents/PresentsMainPage"
 import HelpCenterMainPage from "../pages/HelpCenter/HelpCenterMainPage"
-
+import Login from "../AdminPanel/Login";
 const Allroutes = () => {
 
   return (
@@ -23,6 +23,8 @@ const Allroutes = () => {
       <Route path="/main" element={<Main/>}>  </Route>
       <Route path="/presentsmainpage" element={<PresentsMainPage/>}> </Route>
       <Route path="/helpcentermainpage" element={<HelpCenterMainPage/>}> </Route>
+      <Route path="/login" element={<Login/>}> </Route>
+
     </Routes>
   );
 };
