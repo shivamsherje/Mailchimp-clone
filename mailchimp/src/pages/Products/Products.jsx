@@ -23,7 +23,7 @@ import WebLayout from "./WebLayout";
 
 const Products = () => {
   return (
-    <Box backgroundColor="#ffe6ff" w="100%">
+    <Box backgroundColor="#ffe6ff" w="100%" pt={10}>
       <Container as={Stack} maxW={"2xl"} pt={20} pb={16}>
         <Center>
           <Stack direction="column" spacing={4}>
