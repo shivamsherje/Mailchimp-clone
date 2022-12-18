@@ -18,6 +18,7 @@ import flowerpot from "../../assets/flowerpot.png";
 import onlyLogo from "../../assets/Onlylogo.png";
 import showe from "../../assets/show.png";
 import hide from "../../assets/hide.png";
+import {Link} from 'react-router-dom'
 const SignupPage = () => {
   const [show, setShow] = React.useState(false);
   const handleClick = () => setShow(!show);
@@ -41,9 +42,10 @@ const SignupPage = () => {
           h="153vh"
           bgColor="white"
         >
+            <Link to="/"></Link>
           <Image src={onlyLogo} w={20} />
           <Box w="70%" ml="18%">
-            <Heading mt="10%">Sign up for Mailchimp</Heading>
+            <Heading mt="10%">Sign up for CyberDomain</Heading>
             <Text mt={5}>
               Create a free account or
               <span className="spanHeading">log in</span>{" "}

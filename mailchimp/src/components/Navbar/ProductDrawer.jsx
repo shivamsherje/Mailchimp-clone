@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import TextComponent from "./TextComponent";
+import {Link} from 'react-router-dom'
 
 const ProductDrawer = ({ ram }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -33,8 +34,12 @@ const ProductDrawer = ({ ram }) => {
           <DrawerHeader></DrawerHeader>
           <DrawerBody>
             <Text mt={5} mb={5} fontSize="sm">WE'LL HELP YOU — </Text>
+            <Link to="/products">
             <TextComponent >Get Your Bussiness Online</TextComponent>
-            <TextComponent>Market Your Bussiness</TextComponent>
+            </Link>
+            <Link to="/onlinestores">
+            <TextComponent>Online Stores</TextComponent>
+            </Link>
             <Divider mt={10} mb={10} orientation="horizontal" />
             <Text fontSize="sm" mt={5} mb={5}>PLATFORM FEATURES — </Text>
             <TextComponent>Audience Management</TextComponent>
