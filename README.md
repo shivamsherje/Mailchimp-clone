@@ -42,7 +42,5 @@ Start the server
 ## Tech Stack
 ​
 **Client:** React, Redux, TypeScript, JavaScript
-
 <br>
-​
 **Server:** JSON
