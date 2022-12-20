@@ -13,9 +13,22 @@ function Banner() {
   return (
     <Box>
       <Box py={"70px"} px={"5%"} pt={"150px"} bgColor={"#241b15"}>
-        <Grid templateColumns={"35% 55%"} gap={"10%"}>
+        <Grid
+          templateColumns={{
+            base: "repeat(1, 1fr)",
+            sm: "repeat(1, 1fr)",
+            md: "35% 55%",
+            lg: "35% 55%",
+            xl: "35% 55%",
+            "2xl": "35% 55%",
+          }}
+          gap={"10%"}>
           <GridItem textAlign={"left"}>
-            <Flex textAlign={"left"} flexDirection={"column"} justifyContent={"center"} h={"100%"}>
+            <Flex
+              textAlign={"left"}
+              flexDirection={"column"}
+              justifyContent={"center"}
+              h={"100%"}>
               <Image
                 w={"90%"}
                 src="https://images.ctfassets.net/3eti6ketg4ch/1z55OclXaN7Y6NImJvCEr0/9c0cbffcb8579ec95e3fcbf3eb31d852/06_Homepage_HeroLogo.png"
@@ -27,11 +40,21 @@ function Banner() {
                 ask your own questions, or just immerse yourself into their
                 worlds.
               </Text>
-              <Button fontSize={"xs"} mt={6} w={"max-content"} color={"white"} variant={"link"}>WATCH NOW</Button>
+              <Button
+                fontSize={"xs"}
+                mt={6}
+                w={"max-content"}
+                color={"white"}
+                variant={"link"}>
+                WATCH NOW
+              </Button>
             </Flex>
           </GridItem>
           <GridItem>
-            <Image src="https://images.ctfassets.net/3eti6ketg4ch/6EO1Cycwwu6o8i3iuGvbJb/e12843585079fef0e8f474d82c34994a/05_Homepage_HeroImage-min.png" />
+            <Image
+              mb={"50px"}
+              src="https://images.ctfassets.net/3eti6ketg4ch/6EO1Cycwwu6o8i3iuGvbJb/e12843585079fef0e8f474d82c34994a/05_Homepage_HeroImage-min.png"
+            />
           </GridItem>
         </Grid>
       </Box>

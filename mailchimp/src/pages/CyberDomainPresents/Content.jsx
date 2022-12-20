@@ -38,12 +38,38 @@ function Content() {
       <Box mb={"100px"}>
         <Text fontSize={"3xl"}>{filter}</Text>
         <Flex justifyContent={"center"} gap={4} mt={3}>
-          <Button variant={"link"} color={"gray.600"} fontSize={"xs"} onClick={()=>handleFilter("All Shows")}>ALL</Button>
-          <Button variant={"link"} color={"gray.600"} fontSize={"xs"} onClick={()=>handleFilter("Watch")}>WATCH</Button>
-          <Button variant={"link"} color={"gray.600"} fontSize={"xs"} onClick={()=>handleFilter("Listen")}>LISTEN</Button>
+          <Button
+            variant={"link"}
+            color={"gray.600"}
+            fontSize={"xs"}
+            onClick={() => handleFilter("All Shows")}>
+            ALL
+          </Button>
+          <Button
+            variant={"link"}
+            color={"gray.600"}
+            fontSize={"xs"}
+            onClick={() => handleFilter("Watch")}>
+            WATCH
+          </Button>
+          <Button
+            variant={"link"}
+            color={"gray.600"}
+            fontSize={"xs"}
+            onClick={() => handleFilter("Listen")}>
+            LISTEN
+          </Button>
         </Flex>
       </Box>
-      <Grid px={"5%"} gridTemplateColumns={"repeat(4, 1fr)"} gap={6}>
+      <Grid
+        px={"5%"}
+        gridTemplateColumns={{
+          base: "repeat(1, 1fr)",
+          sm: "repeat(2, 1fr)",
+          md: "repeat(3, 1fr)",
+          xl: "repeat(4, 1fr)",
+        }}
+        gap={6}>
         {data.map((ele) => {
           return <Card poster={ele.poster} logo={ele.logo} tag={ele.tag} />;
         })}
