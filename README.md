@@ -39,6 +39,9 @@ Easily Create A Website That Promotes Your Brand Online With Pre-Set Themes and 
 ​​
 ![Screenshot (127)](https://user-images.githubusercontent.com/97978681/208676523-5fe1a69d-cb9e-46f7-9b88-bc682b4f697e.png)
 ​
+**Admin Panel**
+![Screenshot (133)](https://user-images.githubusercontent.com/97978681/208678612-45aa5bc1-c534-4a2c-9029-055b9dc1957e.png)
+​
 **Resources**- **Cyberdomain 101**
 <br/>
 ![Screenshot (128)](https://user-images.githubusercontent.com/97978681/208676877-e6fff818-187c-45ed-a1bf-8f7dbf4a082f.png)
