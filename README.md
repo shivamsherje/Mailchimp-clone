@@ -12,6 +12,7 @@ Easily Create A Website That Promotes Your Brand Online With Pre-Set Themes and 
 ## Tech Stack
 ​
 **Client:** React,chakra Ui, Redux, TypeScript, JavaScript
+​
 **Server:** JSON
 
 ## Screenshots
