@@ -72,7 +72,7 @@ function AdminProducts() {
         <Flex pt={5} gap={"20px"}>
           <Box>
             <Flex mb="20px">
-              <Text fontWeight={"bold"} mb="5px" w={"200px"}>
+              <Text fontWeight={"bold"} mb="5px" w={["50px","100px","200px"]}>
                 Page Limit:
               </Text>
               <Select
@@ -119,8 +119,8 @@ function AdminProducts() {
             {data.map((item) => (
               <Tr>
                 <Td>{item.id}</Td>
-                <Td isNumeric>{item.title}</Td>
-                <Td isNumeric>{item.category}</Td>
+                <Td>{item.title}</Td>
+                <Td>{item.category}</Td>
                 <Td>{item.pricing}</Td>
                 <Td>
                   <Image width={[100, 200, 400]} src={item.image} />

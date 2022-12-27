@@ -33,7 +33,16 @@ function Content() {
 
   return (
     <Box mt={"400px"} textAlign={"left"}>
-      <Grid m={"auto"} w={"70%"} templateColumns={"repeat(2, 1fr)"} gap={6}>
+      <Grid
+        m={"auto"}
+        w={"70%"}
+        templateColumns={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(1, 1fr)",
+          lg: "repeat(2, 1fr)",
+          xl: "repeat(2, 1fr)",
+        }}
+        gap={6}>
         <GridItem>
           <Image
             width={"85%"}
@@ -77,7 +86,12 @@ function Content() {
         m={"auto"}
         mt={"130px"}
         w={"70%"}
-        templateColumns={"repeat(2, 1fr)"}
+        templateColumns={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(1, 1fr)",
+          lg: "repeat(2, 1fr)",
+          xl: "repeat(2, 1fr)",
+        }}
         gap={"30px"}>
         <GridItem>
           <Flex
@@ -134,7 +148,16 @@ function Content() {
       {/*  */}
 
       <Box mt={"130px"} bgColor={"#f6f6f4"} p={"100px"}>
-        <Grid m={"auto"} w={"70%"} templateColumns={"repeat(2, 1fr)"} gap={6}>
+        <Grid
+          m={"auto"}
+          w={"70%"}
+          templateColumns={{
+            base: "repeat(1, 1fr)",
+            md: "repeat(1, 1fr)",
+            lg: "repeat(2, 1fr)",
+            xl: "repeat(2, 1fr)",
+          }}
+          gap={6}>
           <GridItem>
             <Image
               width={"85%"}
@@ -180,7 +203,12 @@ function Content() {
         m={"auto"}
         mt={"130px"}
         w={"70%"}
-        templateColumns={"repeat(2, 1fr)"}
+        templateColumns={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(1, 1fr)",
+          lg: "repeat(2, 1fr)",
+          xl: "repeat(2, 1fr)",
+        }}
         gap={"30px"}>
         <GridItem>
           <Text fontSize={"3xl"} mb={8}>
@@ -258,7 +286,12 @@ function Content() {
         m={"auto"}
         mt={"130px"}
         w={"70%"}
-        templateColumns={"repeat(2, 1fr)"}
+        templateColumns={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(1, 1fr)",
+          lg: "repeat(2, 1fr)",
+          xl: "repeat(2, 1fr)",
+        }}
         gap={"30px"}>
         <GridItem>
           <Flex
@@ -322,7 +355,15 @@ function Content() {
 
       {/*  */}
 
-      <Grid mt={"130px"} templateColumns={"30% 70%"}>
+      <Grid
+        mt={"130px"}
+        templateColumns={{
+          base: "30% 70%",
+          sm: "repeat(1, 1fr)",
+          md: "repeat(1, 1fr)",
+          lg: "30% 70%",
+          xl: "30% 70%",
+        }}>
         <GridItem>
           <Box p={12} bgColor={"#f25f26"}>
             <Image
@@ -339,7 +380,7 @@ function Content() {
             alignItems={"center"}
             textAlign={"center"}
             bgColor={"#fee017"}>
-            <Text fontSize={"4xl"}>
+            <Text my={12} fontSize={"4xl"}>
               Nice work. Once you've sent your first email campaign, you're
               officially part of the club.
             </Text>
@@ -362,7 +403,12 @@ function Content() {
         m={"auto"}
         mt={"130px"}
         w={"70%"}
-        templateColumns={"repeat(2, 1fr)"}
+        templateColumns={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(1, 1fr)",
+          lg: "repeat(2, 1fr)",
+          xl: "repeat(2, 1fr)",
+        }}
         gap={6}>
         <GridItem>
           <Image
@@ -404,7 +450,12 @@ function Content() {
         m={"auto"}
         mt={"130px"}
         w={"70%"}
-        templateColumns={"repeat(2, 1fr)"}
+        templateColumns={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(1, 1fr)",
+          lg: "repeat(2, 1fr)",
+          xl: "repeat(2, 1fr)",
+        }}
         gap={"30px"}>
         <GridItem>
           <Flex
@@ -464,7 +515,12 @@ function Content() {
         m={"auto"}
         mt={"130px"}
         w={"70%"}
-        templateColumns={"repeat(2, 1fr)"}
+        templateColumns={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(1, 1fr)",
+          lg: "repeat(2, 1fr)",
+          xl: "repeat(2, 1fr)",
+        }}
         gap={6}>
         <GridItem>
           <Box>
@@ -504,7 +560,12 @@ function Content() {
         m={"auto"}
         mt={"130px"}
         w={"70%"}
-        templateColumns={"repeat(2, 1fr)"}
+        templateColumns={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(1, 1fr)",
+          lg: "repeat(2, 1fr)",
+          xl: "repeat(2, 1fr)",
+        }}
         gap={"30px"}>
         <GridItem>
           <Flex
@@ -653,7 +714,12 @@ function Content() {
       <Grid
         w={"50%"}
         m={"auto"}
-        templateColumns={"repeat(2, 1fr)"}
+        templateColumns={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(1, 1fr)",
+          lg: "repeat(2, 1fr)",
+          xl: "repeat(2, 1fr)",
+        }}
         mt={"130px"}>
         <GridItem>
           <Image
@@ -685,7 +751,9 @@ function Content() {
         py={"110px"}
         textAlign={"center"}
         bgColor={"#fee017"}>
-        <Text mb={2} fontSize={"5xl"}>It's easy to get started</Text>
+        <Text mb={2} fontSize={"5xl"}>
+          It's easy to get started
+        </Text>
         <Text fontSize={"2xl"}>And it's free. Two things everyone loves.</Text>
         <Box mt={8} className="btn-shadow">
           <Button
